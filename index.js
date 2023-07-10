@@ -132,7 +132,7 @@ function init_vision_and_image(){
 		newDivElement.className = "character_image";
 		newDivElement.onclick = function(){click_char(this)};
 		var img = new Image();
-		img.src = `https://rerollcdn.com/GENSHIN/Characters/1/${c["name"]}.png`;
+		img.src = `https://rerollcdn.com/GENSHIN/Characters/1/${escape(c["name"])}.png`;
 		image_list[c["name"]]=img;
 		img.className= "inner_image"
 		newDivElement.appendChild(img);
